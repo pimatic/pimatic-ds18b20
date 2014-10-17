@@ -1,6 +1,6 @@
 { "name": "pimatic-plugin-template",
   "description": "The plugin description",
-  "author": "Your Name <you@example.com> (http://your-website)",
+  "author": "Oliver Schneider <oliverschneider89+sweetpi@gmail.com> (http://sweetpi.de)",
   "main": "my-plugin",
   "files": [
     "my-plugin.coffee",
@@ -8,7 +8,7 @@
     "my-plugin-config-schema.coffee"
   ],
   "version": "0.8.0",
-  "homepage": "http://your-plugin-website",
+  "homepage": "http://github.com/pimatic/pimatic",
   "private": true,
   "repository": {
     "type": "git",
