@@ -1,21 +1,23 @@
-{ "name": "pimatic-plugin-template",
+{
+  "name": "pimatic-plugin-template",
   "description": "The plugin description",
   "author": "Oliver Schneider <oliverschneider89+sweetpi@gmail.com> (http://sweetpi.de)",
-  "main": "my-plugin",
+  "main": "ds18b20",
   "files": [
-    "my-plugin.coffee",
+    "ds18b20.coffee",
     "README.md",
-    "my-plugin-config-schema.coffee"
+    "ds18b20-config-schema.coffee",
+    "device-config-schema.coffee"
   ],
   "version": "0.8.0",
-  "homepage": "http://github.com/pimatic/pimatic",
-  "private": true,
+  "homepage": "http://github.com/pimatic/pimatic-ds18b20",
   "repository": {
     "type": "git",
-    "url": "git://github.com/pimatic/pimatic-plugin-template.git"
+    "url": "git://github.com/pimatic/pimatic-ds18b20.git"
   },
-  "configSchema": "my-plugin-config-schema.coffee",
+  "configSchema": "ds18b20-config-schema.coffee",
   "dependencies": {
+    "ds18b20": "0.0.1"
   },
   "peerDependencies": {
     "pimatic": "0.8.*"
