@@ -15,6 +15,11 @@
     "type": "git",
     "url": "git://github.com/pimatic/pimatic-ds18b20.git"
   },
+  "keywords": [
+    "pimatic",
+    "devices",
+    "DS18B20"
+  ],
   "configSchema": "ds18b20-config-schema.coffee",
   "dependencies": {
     "ds18b20": "0.0.1"
