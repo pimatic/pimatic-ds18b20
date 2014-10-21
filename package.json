@@ -1,6 +1,6 @@
 {
   "name": "pimatic-ds18b20",
-  "description": "The plugin description",
+  "description": "Support for the DS18B20 1-wire digital temperature sensor.",
   "author": "Oliver Schneider <oliverschneider89+sweetpi@gmail.com> (http://sweetpi.de)",
   "main": "ds18b20",
   "files": [
