@@ -38,9 +38,10 @@ module.exports = (env) ->
 
 
     requestValue: ->
-      sense.temperatureAsync(@config.hardwareId).then( (value) =>
-        @_temperature = value
-        @emit 'temperature', value
+      sense.temperatureAsync(@config.hardwareId).then( ({value}) =>
+        if value isnt 0xffff
+          @_temperature = value
+          @emit 'temperature', value
       ).catch( (error) =>
         env.logger.error(
           "Error reading DS18B20Sensor with hardwareId #{@config.hardwareId}: #{error.message}"
