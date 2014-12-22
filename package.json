@@ -22,7 +22,7 @@
   ],
   "configSchema": "ds18b20-config-schema.coffee",
   "dependencies": {
-    "ds18b20": "0.0.1"
+    "ds18b20": "sweetpi/ds18b20"
   },
   "peerDependencies": {
     "pimatic": "0.8.*"
