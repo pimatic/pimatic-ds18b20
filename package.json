@@ -9,7 +9,7 @@
     "ds18b20-config-schema.coffee",
     "device-config-schema.coffee"
   ],
-  "version": "0.8.8",
+  "version": "0.8.9",
   "homepage": "http://github.com/pimatic/pimatic-ds18b20",
   "repository": {
     "type": "git",
