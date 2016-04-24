@@ -28,14 +28,13 @@ module.exports = (env) ->
     _temperature: null
 
     constructor: (@config, lastState) ->
-      @id = config.id
-      @name = config.name
+      @id = @config.id
+      @name = @config.name
       @_temperature = lastState?.temperature?.value
       super()
 
       @requestValue()
-      setInterval( ( => @requestValue() ), @config.interval)
-
+      @_updateInterval = setInterval( ( => @requestValue() ), @config.interval)
 
     requestValue: ->
       sense.temperatureAsync(@config.hardwareId).then( ({value}) =>
@@ -52,7 +51,11 @@ module.exports = (env) ->
       )
 
     getTemperature: -> Promise.resolve(@_temperature)
-
+    
+    destroy: ->
+      clearInterval(@_updateInterval)
+      super()
+      
   # ###Finally
   # Create a instance of my plugin
   plugin = new DS18B20Plugin
